@@ -15,6 +15,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
+        
+        
+        
     }
 
     /**
@@ -34,26 +38,35 @@ public class TelaPrincipal extends javax.swing.JFrame {
         MenuAddQuartos = new javax.swing.JMenu();
         BtnCadastrarQuarto = new javax.swing.JMenuItem();
         BtnConsultarQuarto = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        jMenu9 = new javax.swing.JMenu();
+        jMenu10 = new javax.swing.JMenu();
+        jMenu11 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        BarraMenu.setBackground(java.awt.Color.black);
+        BarraMenu.setBackground([238,238,238]);
 
-        CadastrosBarComp.setForeground(java.awt.Color.white);
-        CadastrosBarComp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Add.png"))); // NOI18N
+        CadastrosBarComp.setForeground(java.awt.Color.black);
+        CadastrosBarComp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cadastrar.png"))); // NOI18N
         CadastrosBarComp.setText("Cadastros   |");
+        CadastrosBarComp.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
 
+        MenuAddHospedes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_hospede.png"))); // NOI18N
         MenuAddHospedes.setText("Hóspedes");
 
+        BtnCadastrarHospede.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
         BtnCadastrarHospede.setText("Cadastrar");
         MenuAddHospedes.add(BtnCadastrarHospede);
 
+        BtnConsultarHospede.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/business_man_usersearch_thesearch_theclient_2356_1.png"))); // NOI18N
         BtnConsultarHospede.setText("Consultar");
         BtnConsultarHospede.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,11 +77,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         CadastrosBarComp.add(MenuAddHospedes);
 
+        MenuAddQuartos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_quarto.png"))); // NOI18N
         MenuAddQuartos.setText("Quartos");
 
+        BtnCadastrarQuarto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_quarto.png"))); // NOI18N
         BtnCadastrarQuarto.setText("Adicionar");
         MenuAddQuartos.add(BtnCadastrarQuarto);
 
+        BtnConsultarQuarto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/buscar.png"))); // NOI18N
         BtnConsultarQuarto.setText("Consultar");
         BtnConsultarQuarto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,31 +95,57 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         CadastrosBarComp.add(MenuAddQuartos);
 
+        jMenu8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_funcionario.png"))); // NOI18N
+        jMenu8.setText("Funcionários");
+        CadastrosBarComp.add(jMenu8);
+
+        jMenu9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_fornecedor.png"))); // NOI18N
+        jMenu9.setText("Fornecedores");
+        CadastrosBarComp.add(jMenu9);
+
+        jMenu10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_produtos.png"))); // NOI18N
+        jMenu10.setText("Produtos");
+        CadastrosBarComp.add(jMenu10);
+
+        jMenu11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon_servicos.png"))); // NOI18N
+        jMenu11.setText("Serviços");
+        CadastrosBarComp.add(jMenu11);
+
         BarraMenu.add(CadastrosBarComp);
 
-        jMenu2.setForeground(java.awt.Color.white);
+        jMenu2.setForeground(java.awt.Color.black);
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/calendario.png"))); // NOI18N
         jMenu2.setText("Reservas   |");
         BarraMenu.add(jMenu2);
 
-        jMenu3.setForeground(java.awt.Color.white);
-        jMenu3.setText("Consumos  |");
+        jMenu3.setForeground(java.awt.Color.black);
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/consumo.png"))); // NOI18N
+        jMenu3.setText("Vendas");
         BarraMenu.add(jMenu3);
 
-        jMenu4.setForeground(java.awt.Color.white);
+        jMenu4.setForeground(java.awt.Color.black);
+        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/financeiro.png"))); // NOI18N
         jMenu4.setText("Financeiro   |");
         BarraMenu.add(jMenu4);
 
-        jMenu5.setForeground(java.awt.Color.white);
+        jMenu5.setForeground(java.awt.Color.black);
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/relatorios.png"))); // NOI18N
         jMenu5.setText("Relatórios   |");
         BarraMenu.add(jMenu5);
 
-        jMenu6.setForeground(java.awt.Color.white);
+        jMenu6.setForeground(java.awt.Color.black);
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/seguranca.png"))); // NOI18N
         jMenu6.setText("Segurança   |");
         BarraMenu.add(jMenu6);
 
-        jMenu7.setForeground(java.awt.Color.white);
-        jMenu7.setText("Ferramentas");
+        jMenu7.setForeground(java.awt.Color.black);
+        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ferramentas.png"))); // NOI18N
+        jMenu7.setText("Ferramentas   |");
         BarraMenu.add(jMenu7);
+
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/sair.png"))); // NOI18N
+        jMenu1.setText("Sair");
+        BarraMenu.add(jMenu1);
 
         setJMenuBar(BarraMenu);
 
@@ -111,11 +153,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 647, Short.MAX_VALUE)
+            .addGap(0, 923, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 388, Short.MAX_VALUE)
+            .addGap(0, 404, Short.MAX_VALUE)
         );
 
         pack();
@@ -173,11 +215,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu CadastrosBarComp;
     private javax.swing.JMenu MenuAddHospedes;
     private javax.swing.JMenu MenuAddQuartos;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu10;
+    private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     // End of variables declaration//GEN-END:variables
 }
