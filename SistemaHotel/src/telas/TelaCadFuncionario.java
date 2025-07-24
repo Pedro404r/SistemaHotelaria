@@ -8,12 +8,12 @@ package telas;
  *
  * @author whoami
  */
-public class teste2 extends javax.swing.JInternalFrame {
+public class TelaCadFuncionario extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form teste2
+     * Creates new form TelaCadFuncionario
      */
-    public teste2() {
+    public TelaCadFuncionario() {
         initComponents();
     }
 

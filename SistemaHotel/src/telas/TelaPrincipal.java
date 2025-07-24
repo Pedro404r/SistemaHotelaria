@@ -250,10 +250,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         telaFundo.setLayout(telaFundoLayout);
         telaFundoLayout.setHorizontalGroup(
             telaFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(telaFundoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblFundo, javax.swing.GroupLayout.PREFERRED_SIZE, 1718, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(lblFundo, javax.swing.GroupLayout.PREFERRED_SIZE, 1742, Short.MAX_VALUE)
         );
         telaFundoLayout.setVerticalGroup(
             telaFundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -546,15 +543,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void BtnLogoffActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLogoffActionPerformed
-        teste tela = new teste();
-        telaFundo.add(tela);
-        tela.setVisible(true);        // TODO add your handling code here:
+       // TODO add your handling code here:
     }//GEN-LAST:event_BtnLogoffActionPerformed
 
     private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
-        teste2 tela = new teste2();
-        telaFundo.add(tela);
-        tela.setVisible(true);        // TODO add your handling code here:
+       // TODO add your handling code here:
     }//GEN-LAST:event_jMenu1MouseClicked
 
     /**
